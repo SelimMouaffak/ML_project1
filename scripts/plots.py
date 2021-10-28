@@ -6,10 +6,10 @@ import matplotlib.pyplot as plt
 
 def cross_validation_visualization(lambds, mse_tr, mse_te):
     """visualization the curves of mse_tr and mse_te."""
-    plt.semilogx(lambds, mse_tr, marker=".", color='b', label='train error')
-    plt.semilogx(lambds, mse_te, marker=".", color='r', label='test error')
+    plt.semilogx(lambds, mse_tr, marker=".", color='b', label='train accuracy')
+    plt.semilogx(lambds, mse_te, marker=".", color='r', label='test accuracy')
     plt.xlabel("lambda")
-    plt.ylabel("rmse")
+    plt.ylabel("accuracy")
     plt.xlim(1e-4, 1)
     plt.title("cross validation")
     plt.legend(loc=2)
