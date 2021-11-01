@@ -13,7 +13,18 @@ This code works on a dataset that is based on real data from the CERN collider.
 It performs data pre-processing, then trains a specific model on the data. 
 The model is then used on new unobserved data to predict whether the particle
 is a Higgs Boson or not. 
-Based on the testing set, it has an accuracy of 82.3%
+A lot of different models were used before finding the optimal one for our case.
+All the models that we tried can be found in the file implementations.py
+This file contains only the algorithms, to try it, place the file in your 
+working directory and do the following:
+
+```python
+from implementations import *
+```
+
+Then all the methods will be available for usage.
+Finally, based on the testing set, our implementation
+has an accuracy of 82.3%
 
 
 # How to use 
@@ -25,7 +36,7 @@ You will need this file to be in the same directory as the executable file.
 Once it is done, open the terminal in the directory where the executable file is, and type:
 
 ```bash
-python run Third.py
+python run.py
 ```
 
 
